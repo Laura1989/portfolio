@@ -1,0 +1,63 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.grid {
+  background: #EEE;
+  //max-width: 1200px;
+}
+
+
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+//phoneSize//
+/* 1 columns for larger screens */
+.grid-sizer,
+.grid-item {
+  width: 100%;
+}
+//tablets
+@media screen and (min-width: 768px) {
+  /* 2 columns for larger screens */
+  .grid-sizer, .grid-item  { width: 50%; }
+}
+//mediumDest
+@media screen and (min-width: 992px) {
+  /* 3 columns for larger screens */
+  .grid-sizer, .grid-item  { width: 33.333%; }
+}
+//LargeDest
+//@media screen and (min-width: 1200px) {
+//  /* 3 columns for larger screens */
+//  .grid-sizer, .grid-item  { width: 20%; }
+//}
+
+.grid-item {
+  //height: 120px;
+  float: left;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+  //margin-bottom: 10px;
+}
+
+.grid-item--width2 { width:  20%; }
+.grid-item--width3 { width:  30%; }
+.grid-item--width4 { width:  40%; }
+.grid-item--width5 { width:  50%; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
+
+
+
+
+

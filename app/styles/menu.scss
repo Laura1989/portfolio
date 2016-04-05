@@ -1,0 +1,21 @@
+.pushy{
+  width: 250px; /* Changed the width to 400px */
+  margin-left: -15px; //because bootstrap container-fluid 15px padding
+}
+
+.pushy-left{
+  transform: translate3d(-300px,0,0); /* Updated the values */
+  /* Don't forget the vendor prefixes */
+}
+
+.container-push, .push-push{
+  transform: translate3d(300px,0,0); /* Updated the values */
+  /* Don't forget the vendor prefixes */
+}
+
+.barra-menu{
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 15px;
+  margin-top: 7px;
+}
